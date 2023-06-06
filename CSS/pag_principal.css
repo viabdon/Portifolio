@@ -1,0 +1,212 @@
+:root {
+    --fuschia: #A239CA;
+    --jewel: #4717F6;
+    --void: #0E0B16;
+    --stark: #E7DFDD;
+    --plum: #481C37;
+}
+
+@keyframes revelarTxt {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+body {
+    color: var(--stark);
+    background: repeating-linear-gradient(to bottom, var(--void), var(--jewel), var(--void));
+    background-repeat: no-repeat;
+    font-family:'Courier New', Courier, monospace;
+    min-height: 1920px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: space-between;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#pfp {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 200px;
+}
+
+#descricaoGeral {
+    font-size: large;
+    text-align: justify;
+    max-width: 350px;
+    max-height: 300px;
+    line-height: 120%;
+    margin-top: 3%;  
+    padding-left: 20px;
+    width: 100%;
+    white-space: pre-wrap;
+    animation: revelarTxt 2s linear forwards;
+}
+
+#pergunta {
+    color: var(--fuschia);
+    font-size: large;
+}
+
+#descricaoPessoal {
+    font-size: large;
+    text-align: justify;
+    max-width: 450px;
+    line-height: 120%;
+    position: relative;  
+    padding-left: 20px;
+    white-space: pre-wrap;
+}
+
+#instagram {
+    background-color: black;
+}
+
+h1 {
+    font-style: italic;
+    position: relative;
+    margin-left: 40%;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+a {
+    color: var(--stark);
+}
+
+button {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: var(--void);
+    background-color: var(--stark);
+    transition: background-color 0.3s ease;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.apagar {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--void);
+    background-color: var(--stark);
+    transition: background-color 0.3s ease;
+    border-style: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+button:hover {
+    background-color: var(--fuschia);
+}
+
+button:active {
+    background-color: var(--plum);
+    color: var(--stark);
+}
+
+.topico {
+    font-size: large;
+    font-style: italic;
+}
+
+.container2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 50px;
+    position:  relative; 
+}
+
+.container3 {
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 50px;
+    max-width: 720px;
+    margin-top: 30px;
+    padding: 50px;
+    position:  relative;   
+    background: repeating-linear-gradient(to bottom, var(--fuschia), var(--jewel));
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container4 {
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 50px;
+    max-width: 720px;
+    margin-top: 30px;
+    padding: 50px;
+    position:  relative;   
+    background: repeating-linear-gradient(to bottom, var(--jewel), var(--fuschia));
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    
+}
+
+.container5 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    max-width: 630px;
+    padding: 20px;
+    position:  relative;   
+}
+
+.container6 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 200px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.container7 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.icones {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+input {
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    box-shadow: 0 0 10px #A239CA;
+}
+
+
+.conteudo {
+    font-size: large;
+    font-weight: 700;
+}
+
+.adm {
+    display: block;
+}

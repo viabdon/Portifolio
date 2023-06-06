@@ -1,0 +1,75 @@
+:root {
+    --fuschia: #A239CA;
+    --jewel: #4717F6;
+    --void: #0E0B16;
+    --stark: #E7DFDD;
+    --plum: #481C37;
+}
+
+body {
+    color: var(--stark);
+    background: repeating-linear-gradient(to bottom, var(--void), var(--jewel));
+    font-family:'Courier New', Courier, monospace;
+    min-height: 720px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    box-shadow: 0 0 10px #A239CA;
+}
+
+button {
+    position: relative;
+    margin-top: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--void);
+    background-color: var(--stark);
+    transition: background-color 0.3s ease;
+    border-style: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--fuschia);
+}
+
+button:active {
+    background-color: var(--plum);
+    color: var(--stark);
+}
+
+.container1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+#senhaLogin {
+    position: relative;
+    margin-top: 20px;
+}
+
+#senhaCadastro {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
